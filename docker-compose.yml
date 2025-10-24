@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    container_name: yavuzlar-gorev
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+      - php_sessions:/var/lib/php/sessions
+    restart: always
+
+volumes:
+  php_sessions:

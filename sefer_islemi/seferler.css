@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #05214a;
+  --black-color: #000000;
+  --middle-color: #093577;
+}
+
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+  background-color: var(--main-color);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 30rem;
+  background-color: white;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url("../images/yolbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+section {
+  padding: 3.5rem 7%;
+}
+
+.baslik .navbar span {
+  font-size: 2rem;
+  color: white;
+}
+.baslik .navbar a {
+  font-size: 2rem;
+  margin: 0.1rem;
+  color: white;
+  border-bottom: 0.1rem solid transparent;
+  transition: all 0.3s ease;
+  padding: 0 1.5rem;
+}
+.baslik .navbar a:hover {
+  border-color: white;
+  padding-bottom: 0.5rem;
+}
+
+.Vınn img {
+  height: 14rem;
+}
+
+.baslik {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 6rem;
+  margin: 0 auto;
+  position: relative;
+  top: auto;
+  z-index: 5;
+  background-color: var(--main-color);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdown-toggle .fa-caret-down {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle .fa-caret-down {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--main-color);
+  min-width: 220px;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background: #f8f9fa;
+  color: #000;
+}
+
+.dropdown-menu a i {
+  width: 20px;
+  text-align: center;
+}
+/* Header Sonu */
+
+/* Home Bölümü */
+.home {
+  background-color: white;
+  min-height: 200vh;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-radius: 3rem;
+  box-shadow: -1px 1px 98px 17px rgba(0, 0, 0, 0.98);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.home .seferler {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.home .seferler .sefer {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background: white;
+}
+
+.sefer .saat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sefer .gidisyeri {
+  font-size: 2rem;
+}
+
+.sefer .fiyat {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.sefer img {
+  max-height: 10rem;
+  max-width: 10rem;
+  border-radius: 3rem;
+  padding: 1rem 0rem;
+  align-items: center;
+}
+
+.sefer .satınal button {
+  color: white;
+  background-color: var(--main-color);
+  font-size: 2rem;
+  border-radius: 2rem;
+  min-height: 2rem;
+  padding: 1rem 3rem;
+}
+
+.sefer .saat .ikon {
+  font-size: 2rem;
+}
+
+.sefer .saat .varis {
+  font-size: 1rem;
+}
+
+.sefer-bulunamadi {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  gap: 4rem;
+  background-color: rgb(243, 243, 243);
+  border-radius: 2rem;
+  height: 70vh;
+  box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.75);
+}
+
+.sefer-bulunamadi h3 {
+  font-weight: 800;
+  font-size: 7rem;
+  margin-bottom: 10rem;
+}
+.sefer-bulunamadi a {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 2rem;
+  box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+}
+
+/* Home Sonu */
+/* Footer Başlangıç */
+.footer {
+  height: 25rem;
+  background: url("../images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.75);
+}
+
+.footercontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  align-items: start;
+  justify-items: center;
+}
+
+.footer .footerlogo img {
+  width: 100%;
+}
+
+.footer .sharebtn {
+  padding-left: 6rem;
+  position: relative;
+  top: 4rem;
+}
+.sharebtn h3 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+.footer .sharebtn a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: var(--main-color);
+  font-size: 3rem;
+}
+
+.footer .altyazı {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 10rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  top: 4rem;
+}
+
+.footer-links h3 {
+  color: black;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+.footer-links a {
+  color: black;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+.sefer-bilgi {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.home .seferler .sefer .ust-bilgiler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  min-height: 10rem;
+  width: 100%;
+}
+
+.sefer .sefer-detay {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: rgb(255, 255, 255);
+  border-top: 1px solid black;
+}
+
+.sefer .sefer-detay.goster {
+  min-height: 35rem;
+  height: auto;
+  padding: 2rem;
+}
+
+.detay-icerik {
+  display: flex;
+
+  gap: 5rem;
+}
+.detay-icerik p {
+  font-size: 3rem;
+  display: flex;
+  font-weight: 800;
+  gap: 10rem;
+}
+.otobus {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.otobus img {
+  min-width: 70rem;
+  min-height: 25rem;
+}
+.koltuk h1 {
+  font-size: 2rem;
+  background-color: white;
+}
+.koltuk {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.koltukinyo {
+  margin-top: 2rem;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  min-width: 150px;
+}
+
+.satinal-btn {
+  padding: 12px 24px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+
+.satinal-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.satinal-btn:not(:disabled):hover {
+  background: gray;
+}

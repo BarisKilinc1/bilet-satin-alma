@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #05214a;
+  --black-color: #000000;
+  --middle-color: #093577;
+}
+
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 300;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+  background-color: var(--main-color);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 30rem;
+  background-color: white;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url("../images/yolbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+section {
+  padding: 3.5rem 7%;
+}
+
+.baslik .navbar span {
+  font-size: 2rem;
+  color: white;
+}
+.baslik .navbar a {
+  font-size: 2rem;
+  margin: 0.1rem;
+  color: white;
+  border-bottom: 0.1rem solid transparent;
+  transition: all 0.3s ease;
+  padding: 0 1.5rem;
+}
+.baslik .navbar a:hover {
+  border-color: white;
+  padding-bottom: 0.5rem;
+}
+
+.Vınn img {
+  height: 14rem;
+}
+
+.baslik {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 6rem;
+  margin: 0 auto;
+  position: relative;
+  top: auto;
+  z-index: 5;
+  background-color: var(--main-color);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdown-toggle .fa-caret-down {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-toggle .fa-caret-down {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--main-color);
+  min-width: 220px;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background: #f8f9fa;
+  color: #000;
+}
+
+.dropdown-menu a i {
+  width: 20px;
+  text-align: center;
+}
+/* Header Sonu */
+
+/* Home Bölümü */
+.home {
+  background-color: white;
+  min-height: 70vh;
+  margin-right: 25%;
+  margin-left: 25%;
+  border-radius: 3rem;
+  box-shadow: -1px 1px 98px 17px rgba(0, 0, 0, 0.98);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.home .profil .bilgiler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: auto;
+}
+
+.bilgilersol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  width: 70rem;
+  background-color: white;
+}
+.bilgilersol h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.bilgilersag {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bilgilersag i {
+  font-size: 12rem;
+  color: #000000;
+  margin-left: 5rem;
+}
+.Guzergah,
+.Saat,
+.Koltuk,
+.Tarih,
+.Fiyat {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.home .profil h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.home .profil button {
+  align-self: center;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  background: #05214a;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.kupon-alani {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4rem;
+  margin: 2rem auto;
+  max-width: 50rem;
+  height: 5rem;
+}
+
+.kupon-alani input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  min-width: 250px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.satinal-btn {
+  display: block;
+  margin: 2rem auto;
+  padding: 1.5rem 4rem;
+  font-size: 2rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Home Sonu */
+/* Footer Başlangıç */
+.footer {
+  height: 25rem;
+  background: url("../images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.75);
+}
+
+.footercontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  align-items: start;
+  justify-items: center;
+}
+
+.footer .footerlogo img {
+  width: 100%;
+}
+
+.footer .sharebtn {
+  padding-left: 6rem;
+  position: relative;
+  top: 4rem;
+}
+.sharebtn h3 {
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+.footer .sharebtn a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: var(--main-color);
+  font-size: 3rem;
+}
+
+.footer .altyazı {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 10rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  top: 4rem;
+}
+
+.footer-links h3 {
+  color: black;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+.footer-links a {
+  color: black;
+
+  font-size: 1.3rem;
+  color: #000000;
+}

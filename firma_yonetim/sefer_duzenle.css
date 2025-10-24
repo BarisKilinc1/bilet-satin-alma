@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+body {
+  background: url("../images/yolbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.baslik .navbar span {
+  font-size: 2rem;
+  color: black;
+}
+.baslik .navbar a {
+  font-size: 2rem;
+  margin: 0.1rem;
+  color: black;
+  border-bottom: 0.1rem solid transparent;
+  transition: all 0.3s ease;
+  padding: 0 1.5rem;
+}
+.baslik .navbar a:hover {
+  border-color: black;
+  padding-bottom: 0.5rem;
+}
+
+.Vınn img {
+  height: 16rem;
+}
+
+.baslik {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 6rem;
+  z-index: 5;
+  background-color: white;
+  border-radius: 4rem;
+  box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+/* Home */
+.home {
+  display: flex;
+  height: 50vh;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.home .solbar {
+  background-color: white;
+  display: flex;
+  position: sticky;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: top;
+  gap: 1rem;
+  width: 40vh;
+  min-height: 70vh;
+  padding: 3rem 3rem;
+  border-radius: 3rem;
+  margin-left: 2rem;
+  box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.25);
+}
+
+.home .solbar .yeni-sefer,
+.home .solbar .kuponlar,
+.home .solbar .seferler {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  color: black;
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+}
+
+.home .solbar .cikis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  color: black;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  padding-top: 25rem;
+}
+
+.home .solbar a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 800;
+  color: black;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.home .solbar a p {
+  margin: 0;
+}
+
+.home .solbar a.aktif {
+  background: white;
+  color: black;
+}
+
+.home .solbar a.aktif::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.home .solbar a::before {
+  content: none;
+}
+.home .solbar a:hover {
+  color: black;
+}
+
+.home .solbar a:hover p {
+  margin-left: 1rem;
+  transition: 0.3s ease;
+}
+
+.home .icerik {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 70vh;
+  border-radius: 3rem;
+  column-gap: 3rem;
+  row-gap: 1.5rem;
+  padding: 0rem 3rem;
+  background-color: white;
+  padding: 2rem 2rem;
+  margin-right: 2rem;
+  margin-left: 5rem;
+  box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.25);
+}
+
+.firmaseferler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  min-width: 100%;
+}
+
+.firmaseferler h2 {
+  padding-bottom: 4rem;
+  font-size: 4rem;
+}
+
+.firmaseferler .seferlertablo th {
+  font-size: 2.1rem;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  max-width: 20rem;
+  height: auto;
+}
+.firmaseferler .seferlertablo td {
+  font-size: 1.9rem;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  max-width: 20rem;
+  height: auto;
+}
+.firmaseferler .seferlertablo td .btn-edit {
+  font-size: 1.9rem;
+
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  max-width: 20rem;
+  height: auto;
+  padding-right: 1rem;
+}
+.firmaseferler .seferlertablo td .btn-delete {
+  font-size: 1.9rem;
+  border-radius: 2rem;
+  background-color: rgb(169, 0, 0);
+  color: black;
+  padding: 0.5rem;
+
+  height: auto;
+}
+
+/* Yeni sefer */
+
+.yeni-sefer-formu {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.yeni-sefer-formu h2{
+ font-size: 4rem;
+ text-align: center;
+ padding-bottom: 2rem;
+}
+.sefer-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 17px -2px rgba(0, 0, 0, 0.35);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+ font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-kaydet {
+  background-color: black;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-kaydet:hover {
+  background-color: #218838;
+}
+
+
+/* Firma */
+.firma {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 2rem;
+  align-items: center;
+  gap: 2rem;
+  
+  width: 100%;
+  min-height: 70vh;
+}
+.firmadüzen {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+
+.firma h2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 4rem;
+  
+}
+.firma .firmadüzen .firmaekle p {
+  display: flex;
+  padding-right: 2rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+.firma .firmadüzen .firmaekle label {
+  display: flex;
+  padding-right: 2rem;
+  font-size: 2rem;
+}
+.firma .firmadüzen .firmaekle input,
+.firma .firmadüzen .firmaekle select {
+    
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border: 2px solid #ddd;
+    border-radius: 1rem;
+}
+
+
+.firma .firmadüzen .firmaekle button {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  padding: 1rem 1rem;
+  margin-top: 2rem;
+}
+
+.firmasag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  border-left: 2px black solid;
+  padding: 2rem 2rem;
+  width: 60%;
+ 
+}
+
+.firmasol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 3rem;
+ margin-top: 2rem;
+  padding: 1rem 1rem;
+  width: 40%;
+  gap: 2rem;
+  
+}
+.firmasol h3{
+font-size: 3rem;
+text-align: center;
+
+}
+
+.firmatablo {
+  
+  margin-top: 3rem;
+  padding-left: 3rem;
+   width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+}
+.firmatablo img{
+  max-height: 50px;
+  max-width: 50px;
+}
+.firmatablo th {
+  font-size: 1.3rem;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  width: 10rem;
+}
+.firmatablo td {
+  font-size: 1.3rem;
+  color: black;
+  border: 2px solid black;
+  padding: 1rem 1rem;
+}
+
+.firmatablo button {
+  
+  display: flex;
+  margin: 0 auto;
+  color: white;
+  background-color: rgb(172, 5, 5);
+  border-radius: 2rem;
+  padding: 1rem 1rem;
+  align-items: center;
+}
